@@ -3,14 +3,13 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-
   app.enableCors({
-    origin: 'https://money-splitter-app-iota.vercel.app', // your frontend on Vercel
+    origin: [
+      'https://money-splitter-app-iota.vercel.app',
+      'https://money-splitter-app-git-main-nikhil-baswals-projects.vercel.app',
+    ],
     credentials: true,
-    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
   });
-
   await app.listen(process.env.PORT || 3001);
 }
 bootstrap();
