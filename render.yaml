@@ -6,4 +6,20 @@ services:
     startCommand: npm start
     repo: https://github.com/NikhilBaswal/Money_Splitter_App
     branch: main
-    rootDir: . # this is important if everything is in root
+    rootDir: .
+    envVars:
+      - key: NEXT_PUBLIC_API_URL
+        value: https://money-splitter-app-lu6r.onrender.com
+
+  - type: web
+    name: money-splitter-backend
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run start:prod
+    repo: https://github.com/NikhilBaswal/Money_Splitter_App
+    branch: main
+    rootDir: backend
+    envVars:
+      - key: PORT
+        value: 10000 # or leave blank for Render to assign
+      # Add your database and other backend env vars here
