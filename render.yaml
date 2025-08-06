@@ -9,7 +9,7 @@ services:
     rootDir: .
     envVars:
       - key: NEXT_PUBLIC_API_URL
-        value: https://money-splitter-app-lu6r.onrender.com
+        value: https://backend-2vqx.onrender.com
 
   - type: web
     name: money-splitter-backend
