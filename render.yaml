@@ -14,7 +14,7 @@ services:
   - type: web
     name: money-splitter-backend
     env: node
-    buildCommand: npm install && npm run build
+    buildCommand: npm install --omit=dev=false && npm run build
     startCommand: npm run start:prod
     repo: https://github.com/NikhilBaswal/Money_Splitter_App
     branch: main
