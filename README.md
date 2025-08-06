@@ -1,6 +1,24 @@
 # Money_Splitter_App
 
-=======
+## Deployment
+
+This project is now configured for deployment with [Supabase](https://supabase.com/).
+
+### Backend
+
+- Uses `@supabase/supabase-js` for Supabase integration.
+- Add a `.env` file in `backend/` with:
+  - `SUPABASE_URL` (your Supabase project URL)
+  - `SUPABASE_KEY` (your Supabase service role key)
+- See `backend/.env.example` for the format.
+
+### Frontend
+
+- If you use Supabase client in the frontend, `@supabase/supabase-js` is already installed in the root `package.json`.
+- Add your Supabase project URL and anon/public key to your frontend environment variables (e.g., `.env.local`).
+
+---
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
