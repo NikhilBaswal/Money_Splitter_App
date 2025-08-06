@@ -27,5 +27,5 @@ services:
       - key: SUPABASE_KEY
         value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJycXlrcm15aHB4cmZkaGx6dW9uIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTQ0Nzg0NzMsImV4cCI6MjA3MDA1NDQ3M30.H92VUXwI9_7yCQPzM9TEij0eq2gE71Wc_W1hI4Ltz3k
       - key: DATABASE_URL
-        value: postgresql://postgres:admin@123@db.rrqykrmyhpxrfdhlzuon.supabase.co:5432/postgres
+        value: postgresql://postgres:Admin@database#12345@db.rrqykrmyhpxrfdhlzuon.supabase.co:5432/postgres
       # Add any other backend env vars here
