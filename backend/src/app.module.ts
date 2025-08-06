@@ -9,11 +9,7 @@ import { ExpensesModule } from './expenses/expenses.module';
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'localhost',
-      port: 12345,
-      username: 'postgres',
-      password: 'kya',
-      database: 'money_splitter',
+      url: process.env.DATABASE_URL,
       autoLoadEntities: true,
       synchronize: true,
     }),
