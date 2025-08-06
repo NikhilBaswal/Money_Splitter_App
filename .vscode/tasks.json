@@ -1,0 +1,22 @@
+{
+    // See https://code.visualstudio.com/docs/editor/tasks for more information
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start Frontend (Next.js)",
+            "type": "shell",
+            "command": "npm run dev",
+            "args": [],
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Start Backend (NestJS)",
+            "type": "shell",
+            "command": "cd backend && npm run start:dev",
+            "args": [],
+            "group": "build",
+            "problemMatcher": []
+        }
+    ]
+}
